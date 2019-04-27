@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -8,15 +9,61 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/border"
         android:layout_above="@id/keyboard">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/haneen"
+            android:background="@drawable/border"
+            android:layout_gravity="left" />
 
         <TextView
             android:id="@+id/textguy"
-            android:typeface="monospace"
-            android:background="@android:color/holo_blue_light"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Arabizziiii" />
+            android:layout_gravity="right"
+            android:background="@drawable/border"
+            android:text=""
+            android:textColor="#2f3542"
+            android:textSize="25dp"
+            android:layout_weight="2"
+            android:typeface="sans"
+            android:padding="5dp"
+            app:fontFamily="@font/actor" />
+        <TextView
+            android:id="@+id/textguy1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/border"
+            android:text=""
+            android:layout_weight="2"
+            android:textColor="#2f3542"
+            android:textSize="25dp"
+            android:typeface="sans"
+            android:padding="5dp"
+            app:fontFamily="@font/actor" />
+
+        <TextView
+            android:id="@+id/textguy2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/border"
+            android:text=""
+            android:textColor="#2f3542"
+            android:layout_weight="2"
+            android:textSize="25dp"
+            android:typeface="sans"
+            android:padding="5dp"
+            app:fontFamily="@font/actor" />
+
+
+
     </LinearLayout>
 
     <android.inputmethodservice.KeyboardView
@@ -25,6 +72,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textguy"
+        android:keyTextColor="#000000"
+        android:background="#f1f2f6"
+        android:keyBackground="@drawable/roundedbutton"
+        android:padding="3dp"
         android:keyPreviewLayout="@layout/key_preview" />
 </LinearLayout>
 

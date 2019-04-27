@@ -6,6 +6,8 @@
     android:id="@+id/keyboard_view"
     android:keyPreviewLayout="@layout/key_preview"
     android:layout_alignParentBottom="true"
-    android:background="@color/colorPrimary">
+    android:fontFamily="@font/actor"
+    android:shadowColor="@android:color/transparent"
+    android:shadowRadius="0.0">
 
 </android.inputmethodservice.KeyboardView>
