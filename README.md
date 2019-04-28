@@ -36,7 +36,7 @@ http://bit.ly/7aneen2019
   - **Jayroop Ramesh** | American University of Sharjah • <b000574121@aus.edu>
   - **Vikram Sakkia** | American University of Sharjah •  <b00064566@aus.edu>
   - **Rawand Faraj Deheliah** | An-najah University • <rawandeheliah@gmail.com>
-  - **Estelle Elizabeth Ocran** | NYUAD • <eeo259@nyu.edu>
+  - **Estelle Elizabeth Ocran** | NYUAD
 
 **Disclaimer:** Team members contributed to various parts of the hack. This breakdown is only a generalization.
 
