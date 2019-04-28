@@ -50,7 +50,7 @@ http://bit.ly/7aneen2019
 ### Primary/Secondary Research and User Testing
 
    **Rawand Faraj Deheliah** | An-najah University • <rawandeheliah@gmail.com>
-  - **Estelle Elizabeth Ocran** | NYUAD • <eeo259@nyu.edu>
+  - **Estelle Elizabeth Ocran** | NYUAD
 
 ## Mentors
 
