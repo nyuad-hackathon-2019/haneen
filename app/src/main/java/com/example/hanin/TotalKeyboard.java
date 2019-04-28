@@ -106,6 +106,7 @@ public class TotalKeyboard extends InputMethodService
 
 
             final InputConnection inputConnection = getCurrentInputConnection();
+            float f = 0;
 
             if (inputConnection != null) switch (primaryCode) {
                 case Keyboard.KEYCODE_DELETE:
@@ -132,14 +133,78 @@ public class TotalKeyboard extends InputMethodService
                     {
                         if(something.length() > 1)
                         {
-                            repustateConnect();
+                            String URL =  "https://api.repustate.com/v4/f08fba212fbf0e1029acd365c9943ca57cde5dac/score.json?text=";
+                            final float[] f1 = new float[1];
+
+
+
+                            RequestQueue requestQueue = Volley.newRequestQueue(this);
+
+                            JsonObjectRequest objectRequest = new JsonObjectRequest(
+                                    Request.Method.POST,
+                                    URL + sentence + "&lang=ar",
+                                    null,
+                                    new Response.Listener<JSONObject>() {
+                                        @Override
+                                        public void onResponse(JSONObject response) {
+
+                                            Log.d("REPUSTATE", response.toString());
+                                            try {
+                                                String arabicreply = response.getString("score");
+                                                f1[0] = Float.parseFloat(arabicreply);
+                                                Log.d("f1:", String.valueOf(f1[0]));
+
+                                                if(f1[0]>0)
+                                                    mText.setText(String.valueOf(Character.toChars(0x1F604)));
+                                                else if(f1[0]<0)
+                                                    mText.setText(String.valueOf(Character.toChars(0x1F61E)));
+                                                else
+                                                    mText.setText(String.valueOf(Character.toChars(0x1F610)));
+
+                                                Random random = new Random();
+                                                int randomNum = random.nextInt(((suggestions.length-2) - 0) + 1) + 0;
+                                                randomNum = random.nextInt(((suggestions.length-2) - 0) + 1) + 0;
+                                                mText1.setText(suggestions[randomNum]);
+                                                randomNum = random.nextInt(((suggestions.length-2) - 0) + 1) + 0;
+                                                mText2.setText(suggestions[randomNum]);
+                                                bool =false;
+                                            } catch (JSONException e) {
+                                                e.printStackTrace();
+                                            }
+
+                                        }
+                                    },
+                                    new Response.ErrorListener() {
+                                        @Override
+                                        public void onErrorResponse(VolleyError error) {
+                                            Log.d("ROSETTE", error.toString());
+                                        }
+                                    }
+                            ){
+                                @Override
+                                public Map<String, String> getHeaders() throws AuthFailureError {
+                                    Map<String,String> params = new HashMap<>();
+                                    params.put("Content-Type","application/json");
+                                    //..add other headers
+                                    return params;
+                                }
+                            };
+
+                            requestQueue.add(objectRequest);
+
                             sentence = "";
                         }
                         else
                         {
                             Log.d("Done", "jiro");
                         }
-                        bool =false;
+
+                    }
+                    if(code == 27)
+                    {
+                        message ="";
+                        sentence="";
+                        something="";
                     }
                     if(code == 32 && bool == false)
                     {
@@ -251,9 +316,9 @@ public class TotalKeyboard extends InputMethodService
 
         }
 
-        public void repustateConnect(){
+        public float repustateConnect(){
             String URL =  "https://api.repustate.com/v4/f08fba212fbf0e1029acd365c9943ca57cde5dac/score.json?text=";
-
+            final float[] f = new float[1];
 
 
 
@@ -270,7 +335,9 @@ public class TotalKeyboard extends InputMethodService
                         Log.d("REPUSTATE", response.toString());
                         try {
                             String arabicreply = response.getString("score");
-                            Toast.makeText(getApplicationContext(), arabicreply, Toast.LENGTH_LONG).show();
+                            f[0] = Float.parseFloat(arabicreply);
+
+//                            Toast.makeText(getApplicationContext(), arabicreply, Toast.LENGTH_LONG).show();
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -294,7 +361,7 @@ public class TotalKeyboard extends InputMethodService
             };
 
             requestQueue.add(objectRequest);
-
+            return f[0];
         }
 
     @Override

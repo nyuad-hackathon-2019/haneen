@@ -13,19 +13,11 @@
         android:layout_above="@id/keyboard">
 
 
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/haneen"
-            android:background="@drawable/border"
-            android:layout_gravity="left" />
-
         <TextView
             android:id="@+id/textguy"
-            android:layout_width="300dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
+            android:layout_gravity="center"
             android:background="@drawable/border"
             android:text=""
             android:textColor="#2f3542"
@@ -36,7 +28,7 @@
             app:fontFamily="@font/actor" />
         <TextView
             android:id="@+id/textguy1"
-            android:layout_width="300dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:background="@drawable/border"
@@ -50,7 +42,7 @@
 
         <TextView
             android:id="@+id/textguy2"
-            android:layout_width="300dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:background="@drawable/border"
@@ -61,6 +53,14 @@
             android:typeface="sans"
             android:padding="5dp"
             app:fontFamily="@font/actor" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/h"
+            android:background="@drawable/border"
+            android:layout_gravity="right" />
 
 
 

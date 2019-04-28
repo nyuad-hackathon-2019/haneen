@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:keyWidth="35dp"
-    android:horizontalGap="6dp"
+    android:keyWidth="40sp"
+    android:horizontalGap="6sp"
     android:verticalGap="10dp"
     android:keyHeight="45dp"
     >
