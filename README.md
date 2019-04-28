@@ -1,58 +1,63 @@
 ![Logo](7annen_3.png)
 
-# ShoofChef • شوف شاف
+# 7aneen • حنين
 
-شوف شاف is a mobile app that transforms Arabic menus to gorgeous visualizations to help tourists in their exotic local food selection.
-"I am on a see food diet. I see food, I eat it."
+حنين is an mobile solution that helps Arabs type in Arabizi/English, but text each other purely in Arabic script. 
 
 ## Problem Statement
 
-  - Provide users with a visual aid
-  - Encourage tourists to try local food
-  - Inform users about specific food allergies & diets
+  - Typing Arabic literals in keyboards is time consuming and cumbersome
+  - Many Arabs lose touch with their native language due to reliance on Aribizi/English script
 
-## Hack Solution
+## Solution
 
-Mobile app providing tourists a way to visualize Arabic menus. Main features include:
-  - Realtime visual aid of key Arabic dishes
-  - Description of ingredients
-  - Rating system of dishes
-  - Sharing on social media
+ Custom mobile keyboard that offers the following main features:
+  - Transliteration from English/Aribizi to Arabic
+  - Smart Arabic Auto-Complete and Sentence Prediction
+  - Dialect based personalization
+  - Sentiment Analysis for Emotion Recognition and Tone based Emojis
+  - Insights into message integrity, structure and semantics
 
 ## Software Ingredients
 
-  - OCR Google Vision API
+  - Java Android Application
   - NLP Python NLTK
-  - Google Image API
-  - Django Python
-  - Ionic Mobile App
+  - Rosetta API
+  - Repustate API
+  - Neural Networks
+
+
 
 ## Team Members
 
-  - **Rumail Ali Memon** | NYUAD • <rm4631@nyu.edu>
-  - **Rania Fekih** | National Institut of Applied Science and Technologie • <raniafekih@hotmail.com>
-  - **Noor Zehra Naqvi** | Universitat Politècnica de Catalunya • <noorzehra07@gmail.com>
+  - **Jayroop Ramesh** | American University of Sharjah • <b000574121@aus.edu>
+  - **Vikram Sakkia** | American University of Sharjah •  <b00064566@aus.edu>
+  - **Rawand Faraj Deheliah** | An-najah University • <rawandeheliah@gmail.com>
+  - **Estelle Elizabeth Ocran** | NYUAD • <eeo259@nyu.edu>
 
 **Disclaimer:** Team members contributed to various parts of the hack. This breakdown is only a generalization.
 
-### User Interface & iOS App using Ionic
+### User Interface, ROSETTA API and REPUSTATE API 
 
-  - **Rania Fekih** | National Institut of Applied Science and Technologie • <raniafekih@hotmail.com>
+  - **Vikram Sakkia** | American University of Sharjah •  <b00064566@aus.edu>
+  
+### Android Keyboard, Rudimentary Corpus and n-gram model
+  - **Jayroop Ramesh** | American University of Sharjah • <b000574121@aus.edu>
 
-### OCR Google Vision API & NLP Python NLTK
+### Primary/Secondary Research and User Testing
 
-  - **Noor Naqvi** | Universitat Politècnica de Catalunya • <noorzehra07@gmail.com>
-  - **Rumail Ali Memon** | NYUAD • <rm4631@nyu.edu>
+   **Rawand Faraj Deheliah** | An-najah University • <rawandeheliah@gmail.com>
+  - **Estelle Elizabeth Ocran** | NYUAD • <eeo259@nyu.edu>
 
 ## Mentors
 
-  - **Dr. Nariman Ammar** | BirZeit University • <nammar@birzeit.edu>
-  - **Sama Kanbour** | GE • <k@ge.com>
-  - **Stephen Lang** | Cornell Tech • <steplang@gmail.com>
+  - **Sama Kanbour** | GE • <samakanbour@gmail.com>
+  - **Mohamad Al Sayadi** |  IBM • <muhammed.alsayadi@gmail.com	>
+
 
 ![Logo](team.jpg)
 
 ## Needs for Demo
 
-  - Projector for an iPhone
+  - Projector for an Android Phone
   - Project laptop for PowerPoint presentation
