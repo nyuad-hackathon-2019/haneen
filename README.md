@@ -1,4 +1,4 @@
-![Logo](images/shoofchef_line_lockup.png)
+![Logo](7annen_3.png)
 
 # ShoofChef • شوف شاف
 
