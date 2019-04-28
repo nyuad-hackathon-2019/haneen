@@ -2,7 +2,10 @@
 
 # 7aneen • حنين
 
-حنين is an mobile solution that helps Arabs type in Arabizi/English, but text each other purely in Arabic script. 
+حنين is an mobile keyboard solution that helps Arabs type in Arabizi/English, but text each other purely in Arabic script.
+
+## Link to Presentation 
+http://bit.ly/7aneen2019
 
 ## Problem Statement
 
