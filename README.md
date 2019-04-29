@@ -2,24 +2,24 @@
 
 # 7aneen • حنين
 
-حنين is an mobile keyboard solution that helps Arabs type in Arabizi/English, but text each other purely in Arabic script.
+حنين is a mobile keyboard solution that helps Arabs type in Arabizi/English, but text each other purely in Arabic script.
 
 ## Link to Presentation 
 http://bit.ly/7aneen2019
 
 ## Problem Statement
 
-  - Typing Arabic literals in keyboards is time consuming and cumbersome
-  - Many Arabs lose touch with their native language due to reliance on Aribizi/English script
+  - Typing Arabic literals in keyboards is time consuming and cumbersome for many.
+  - Many Arabs lose touch with their native language due to reliance on Aribizi/English script.
 
 ## Solution
 
  Custom mobile keyboard that offers the following main features:
-  - Transliteration from English/Aribizi to Arabic
-  - Smart Arabic Auto-Complete and Sentence Prediction
-  - Dialect based personalization
-  - Sentiment Analysis for Emotion Recognition and Tone based Emojis
-  - Insights into message integrity, structure and semantics
+  - Transliteration from English/Aribizi to Arabic.
+  - Smart Arabic Auto-Complete and Sentence Prediction.
+  - Dialect based personalization.
+  - Sentiment Analysis for Emotion Recognition and Tone based Emojis.
+  - Insights into message integrity, structure and semantics.
 
 ## Software Ingredients
 
@@ -55,7 +55,7 @@ http://bit.ly/7aneen2019
 ## Mentors
 
   - **Sama Kanbour** | GE • <samakanbour@gmail.com>
-  - **Mohamad Al Sayadi** |  IBM • <muhammed.alsayadi@gmail.com	>
+  - **Mohamad Al Sayadi** |  IBM • <muhammed.alsayadi@gmail.com>
 
 
 ![Logo](team.jpg)
@@ -64,3 +64,6 @@ http://bit.ly/7aneen2019
 
   - Projector for an Android Phone
   - Project laptop for PowerPoint presentation
+
+## Link to presentation:
+https://docs.google.com/presentation/d/1yrRRJvs65wN-Cc0Hp6gWFhlDMUWLtC5B1bbmPZQUfc4/edit#slide=id.g21edff7f63_0_32
